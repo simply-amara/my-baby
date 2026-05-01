@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my baby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- QUESTION LOCK SCREEN -->
+<div id="lockScreen">
+  <h2>ANSWER THIS TO UNLOCK ❤️</h2>
+  <p class="question">What are you strongly interested in? 😉</p>
+  <input type="password" id="answerInput" placeholder="Type your answer">
+  <button onclick="checkAnswer()">Unlock</button>
+  <p id="error"></p>
+</div>
+
+<!-- FLOATING NUMBER SCREEN -->
+<div id="numberScreen" style="display:none;">
+  <h1 class="bigNumber">23</h1>
+  <p class="loveText">I love you ❤️</p>
+
+  <button class="tapButton" onclick="goToMain()">
+    Tap Here
+  </button>
+</div>
+
+<!-- FLOATING HEARTS -->
+<div id="hearts"></div>
+
+
+<!-- PAGE 1 -->
+<div class="section active" id="s1">
+  <h1 id="typeText"></h1>
+  <p>I have been thinking about what to say, but the truth is, words do not even feel enough for how much you mean to me.
+
+Two years, two whole years of us. And somehow, it still feels like I am just at the beginning of something so deep and so real. This is the second time I get to celebrate your birthday with you, and all I can think about is how lucky I am that you’re mine and I’m yours. ❤️</p>
+  <button onclick="nextSection()">Continue</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="section" id="s2">
+  <h1>Why Today Matters 🎂</h1>
+  <p>Out of all the days in the year… today gave me you.</p>
+  <p>You did not just come into my life you became my safe place. On days when I feel weak, confused, or tired, you are the one person my heart runs to. You have seen parts of me that no one else sees, and you stayed, you chose me. That alone is something I will never take for granted.</p>
+  <img src="mine.jpg">
+  <button onclick="nextSection()">Next</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="section" id="s3">
+  <h1>My Baby ❤️</h1>
+  <p>I may not say it all the time, but I need you to know that I am so proud of you. I am proud of the man you are, the strength you carry, and everything you are becoming. Even on days when you doubt yourself, I hope you remember that there is someone here who believes in you completely.
+</p>
+  <img src="my.jpg">
+  <button onclick="nextSection()">Next</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="section" id="s4">
+  <h1>The Little Things 💭</h1>
+  <p>It’s the small things you do that mean everything to me, the quiet moments, the reassurance, the “I love yous” that come so naturally. It’s the way you check on me, the way you listen even when I’m not making much sense, the way you make me feel seen and safe without even trying.
+
+It’s in your little efforts, your patience, your presence… all the things you might think are ordinary but mean the world to me. I notice them, I appreciate them, and I carry them with me every day.
+
+You may not always realize it, but you make my life softer, warmer, and a lot more beautiful just by being you.</p>
+  <button onclick="nextSection()">Next</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="section" id="s5">
+  <h1>My Sweetheart</h1>
+  <p>You mean the world to me and i will always choose you my love.</p>
+  <button onclick="nextSection()">Next</button>
+</div>
+
+<!-- FINAL PAGE -->
+<div class="section" id="s6">
+  <h1>If I could give you one thing…</h1>
+  <p>It would be the ability to see yourself through my eyes.</p>
+  <p>Happy Birthday, my love ❤️</p>
+<img src="baby.jpg" alt="">
+  <button onclick="showLove()">Tap one last time</button>
+  <h2 id="love">I love you ❤️</h2>
+<button id="restartBtn" onclick="restart()" style="display:none;">
+  Start Again 🔁
+</button>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
